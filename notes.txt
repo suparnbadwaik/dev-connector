@@ -1,0 +1,48 @@
+
+Mongo cluster creation
+##########################
+1. Create a mongo db account on cloud.mongodb.com
+2. Create a cluster on mongo db, create user, create whitelist, add collection if needed
+
+
+Package Installation
+###########################
+3. Install the below packages for development
+express     express-validator   config  bcrypt  request     gravatar    jsonwebtoken    mongoose
+
+express             - main framework for the backend
+express-validator   - for data validation. based on the model definition. Eg. model\user.js properties
+config              - used to access global variables. Check server.js
+bcrypt              - to encrypt passwords since we dont want to store plain text password in database
+request             - to make http requests to another api
+gravatar            - to profile avatars. when user signs up using an email id and if the user has the same 
+                      email related to gravatar account, we get the account avatar
+jsonwebtoken        - used for authentication
+mongoose            - kind of middle layer between the application and the mongo database
+
+
+4. Install the below packages for running the application
+nodemon     concurrently
+
+
+Define routes
+###########################
+5. create server.js and access express, config, connect to database using mongooe and listen to a port
+
+6. create separate directories and files and path for each route.
+
+
+Connect to the database
+############################
+7. In order to connect to the database, we need mongoose. Use mongoose in the db.js file.
+8. Create a connect method and add connection string to the mongoose.connect method
+
+
+Register the user
+############################
+9. To register the user, we first need to validate the user data 
+10. Then check if the user exists already. To find the data using mongoose, use the below link.
+    https://mongoosejs.com/docs/queries.html
+11. 
+
+
